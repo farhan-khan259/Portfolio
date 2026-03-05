@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "en_US",
-        url: "https://alexjohnson.dev",
+        url: "https://alexjohnsn.dev",
         title: "Alex Johnson | Full Stack Web Developer",
         description: "Full Stack Web Developer fluent in MERN Stack. Building fast, scalable web applications.",
         siteName: "Alex Johnson Portfolio",
