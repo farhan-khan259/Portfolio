@@ -17,22 +17,22 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-    title: "Pir Ghazi Shah | Full Stack Web Developer",
-    description: "Full Stack Web Developer fluent in MERN Stack. Building fast, scalable web applications with clean code and modern best practices.",
-    keywords: ["Full Stack Developer", "MERN Stack", "React", "Node.js", "Web Developer", "Pir Ghazi Shah"],
-    authors: [{ name: "Pir Ghazi Shah" }],
-    creator: "Pir Ghazi Shah",
+    title: "Alex Johnson | Full Stack Web Developer",
+    description: "Full Stack Web Developer fluent in MERN Stack (React, Node, Express, MongoDB). Building fast, scalable web applications with clean code and modern best practices.",
+    keywords: ["Full Stack Developer", "MERN Stack", "React", "Node.js", "Web Developer", "Alex Johnson"],
+    authors: [{ name: "Alex Johnson" }],
+    creator: "Alex Johnson",
     openGraph: {
         type: "website",
         locale: "en_US",
-        url: "https://ghazi829.github.io/My-Portfolio/",
-        title: "Pir Ghazi Shah | Full Stack Web Developer",
+        url: "https://alexjohnson.dev",
+        title: "Alex Johnson | Full Stack Web Developer",
         description: "Full Stack Web Developer fluent in MERN Stack. Building fast, scalable web applications.",
-        siteName: "Pir Ghazi Shah Portfolio",
+        siteName: "Alex Johnson Portfolio",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Pir Ghazi Shah | Full Stack Web Developer",
+        title: "Alex Johnson | Full Stack Web Developer",
         description: "Full Stack Web Developer fluent in MERN Stack",
     },
 };

@@ -29,11 +29,11 @@ export function TopBar() {
                     <div className="flex items-center gap-3">
                         <div className="relative w-12 h-12 rounded-full overflow-hidden border border-border">
                             <img
-                                src="/assets/ghazi logo.png"
+                                src="/assets/logo.webp"
                                 alt={PERSONAL_INFO.name}
                                 className="w-full h-full object-cover"
                                 onError={(e) => {
-                                    e.currentTarget.src = "https://github.com/ghazi829.png";
+                                    e.currentTarget.src = "/assets/logo.webp";
                                 }}
                             />
                         </div>
