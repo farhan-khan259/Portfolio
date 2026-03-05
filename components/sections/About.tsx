@@ -39,7 +39,7 @@ export function About() {
                     >
                         <div className="relative w-24 h-24 md:w-32 md:h-32 mb-4 rounded-full overflow-hidden border-4 border-primary/20">
                             <img
-                                src="https://github.com/ghazi829.png"
+                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=400"
                                 alt={PERSONAL_INFO.name}
                                 className="w-full h-full object-cover"
                             />
@@ -54,7 +54,7 @@ export function About() {
                             </div>
                             <div className="flex items-center gap-2 text-muted-foreground">
                                 <MapPin className="w-4 h-4 flex-shrink-0" />
-                                <span>Pakistan</span>
+                                <span>New York, USA</span>
                             </div>
                         </div>
                     </motion.div>

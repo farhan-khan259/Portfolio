@@ -50,10 +50,10 @@ export function Hero() {
                     {/* Primary Heading - Name Split */}
                     <motion.div variants={item} className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 leading-[0.85] select-none text-[12vw] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] mb-2 uppercase">
                         <span className="font-serif italic font-extralight normal-case tracking-tight text-foreground/80 dark:text-white/90">
-                            Pir Ghazi
+                            Alex
                         </span>
                         <span className="font-sans font-black tracking-tighter text-foreground">
-                            Shah
+                            Johnson
                         </span>
                     </motion.div>
 
@@ -104,8 +104,8 @@ export function Hero() {
                     <MapPin className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col">
-                    <span className="text-[10px] font-black tracking-[0.2em] text-foreground">BASED IN PESHAWAR,</span>
-                    <span className="text-[10px] font-bold tracking-[0.2em] text-muted-foreground uppercase italic font-serif">Pakistan</span>
+                    <span className="text-[10px] font-black tracking-[0.2em] text-foreground">BASED IN NEW YORK,</span>
+                    <span className="text-[10px] font-bold tracking-[0.2em] text-muted-foreground uppercase italic font-serif">United States</span>
                 </div>
             </div>
 
@@ -115,11 +115,9 @@ export function Hero() {
                     <span className="text-[10px] font-black tracking-[0.2em] text-foreground uppercase">FULL STACK DEVELOPER,</span>
                     <span className="text-[10px] font-bold tracking-[0.2em] text-muted-foreground italic font-serif">& MERN SPECIALIST</span>
                 </div>
-                <a href="https://ghazi829.github.io/Ghazi-Resume/" target="_blank" rel="noopener noreferrer">
-                    <div className="p-3 rounded-xl bg-zinc-100 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800/50 text-blue-600 dark:text-blue-500 group-hover:scale-110 transition-transform">
-                        <Layers className="w-5 h-5" />
-                    </div>
-                </a>
+                <div className="p-3 rounded-xl bg-zinc-100 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800/50 text-blue-600 dark:text-blue-500 group-hover:scale-110 transition-transform">
+                    <Layers className="w-5 h-5" />
+                </div>
             </div>
 
             {/* Scroll Indicator */}
