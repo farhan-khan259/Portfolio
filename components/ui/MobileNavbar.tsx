@@ -61,7 +61,7 @@ export function MobileNavbar() {
                 <div className="flex items-center gap-3">
                     <div className="relative w-10 h-10 flex items-center justify-center rounded-xl bg-secondary/50 border border-border shadow-inner overflow-hidden">
                         <Image
-                            src="/assets/ghazi logo.png"
+                            src="/assets/logo.webp"
                             alt="Logo"
                             fill
                             className="object-cover"
