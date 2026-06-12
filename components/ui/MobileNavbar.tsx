@@ -53,29 +53,29 @@ export function MobileNavbar() {
             <motion.div
                 layout
                 className={cn(
-                    "w-full max-w-[640px] h-[54px] pointer-events-auto flex items-center justify-between gap-4 p-2 pl-4 pr-2 rounded-[15px] border border-white/10 bg-white/10 dark:bg-zinc-900/50 backdrop-blur-xl shadow-lg ring-1 ring-black/5",
+                    "w-full max-w-[640px] h-[54px] pointer-events-auto flex items-center justify-between gap-2 p-2 pl-3 pr-2 rounded-[15px] border border-white/10 bg-white/10 dark:bg-zinc-900/50 backdrop-blur-xl shadow-lg ring-1 ring-black/5",
                 )}
             >
                 {/* Left: Logo & Name */}
-                <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent text-sm font-black text-white shadow-inner">
+                <div className="flex min-w-0 items-center gap-2.5">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent text-sm font-black text-white shadow-inner">
                         {PERSONAL_INFO.initials}
                     </div>
-                    <div className="flex flex-col">
-                        <span className="text-sm font-bold text-foreground uppercase leading-none tracking-tight">
+                    <div className="min-w-0 flex flex-col">
+                        <span className="truncate text-[0.95rem] font-bold text-foreground uppercase leading-none tracking-tight">
                             {PERSONAL_INFO.name}
                         </span>
                     </div>
                 </div>
 
                 {/* Right: Controls (Squircle Boxes) */}
-                <div className="flex items-center gap-2">
-                    <div className="scale-75 w-9 h-9 flex items-center justify-center rounded-xl bg-secondary/50 border border-border">
+                <div className="flex shrink-0 items-center gap-1.5">
+                    <div className="flex h-9 w-9 scale-75 items-center justify-center rounded-xl border border-border bg-secondary/50">
                         <ThemeToggle />
                     </div>
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="w-9 h-9 flex items-center justify-center rounded-xl bg-secondary/50 hover:bg-secondary text-foreground transition-colors border border-border"
+                        className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-secondary/50 text-foreground transition-colors hover:bg-secondary"
                     >
                         <AnimatePresence mode="wait" initial={false}>
                             {isOpen ? (
