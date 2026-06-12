@@ -1,39 +1,24 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 
-const inter = Inter({
-    subsets: ["latin"],
-    variable: "--font-inter",
-    display: "swap",
-});
-
-const poppins = Poppins({
-    weight: ["300", "400", "500", "600", "700"],
-    subsets: ["latin"],
-    variable: "--font-poppins",
-    display: "swap",
-});
-
 export const metadata: Metadata = {
-    title: "Alex Johnson | Full Stack Web Developer",
-    description: "Full Stack Web Developer fluent in MERN Stack (React, Node, Express, MongoDB). Building fast, scalable web applications with clean code and modern best practices.",
-    keywords: ["Full Stack Developer", "MERN Stack", "React", "Node.js", "Web Developer", "Alex Johnson"],
-    authors: [{ name: "Alex Johnson" }],
-    creator: "Alex Johnson",
+    title: "Ahmed Usman | AI/ML Engineer",
+    description: "Portfolio of Ahmed Usman, an AI/ML Engineer building production LLM applications, RAG systems, voice agents, and applied AI products.",
+    keywords: ["Ahmed Usman", "AI Engineer", "LLM Engineer", "RAG", "LangGraph", "FastAPI", "Next.js"],
+    authors: [{ name: "Ahmed Usman" }],
+    creator: "Ahmed Usman",
     openGraph: {
         type: "website",
         locale: "en_US",
-        url: "https://alexjohnsn.dev",
-        title: "Alex Johnson | Full Stack Web Developer",
-        description: "Full Stack Web Developer fluent in MERN Stack. Building fast, scalable web applications.",
-        siteName: "Alex Johnson Portfolio",
+        title: "Ahmed Usman | AI/ML Engineer",
+        description: "Production AI systems, LLM workflows, RAG, automation, and voice agents.",
+        siteName: "Ahmed Usman Portfolio",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Alex Johnson | Full Stack Web Developer",
-        description: "Full Stack Web Developer fluent in MERN Stack",
+        title: "Ahmed Usman | AI/ML Engineer",
+        description: "Production AI systems, LLM workflows, RAG, automation, and voice agents.",
     },
 };
 
@@ -44,7 +29,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={`${inter.variable} ${poppins.variable} font-sans antialiased pb-24 overflow-x-hidden w-full relative`}>
+            <body className="font-sans antialiased pb-24 overflow-x-hidden w-full relative">
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="light"

@@ -4,32 +4,32 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 36 33% 97%;
+    --foreground: 210 31% 13%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --primary: 262 83% 58%;
+    --card-foreground: 210 31% 13%;
+    --primary: 174 84% 34%;
     --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --secondary: 36 25% 93%;
+    --secondary-foreground: 210 31% 13%;
+    --muted: 36 25% 93%;
+    --muted-foreground: 215 14% 42%;
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
   }
 
   .dark {
-    --background: 0 0% 0%;
+    --background: 222 47% 9%;
     --foreground: 210 40% 98%;
-    --card: 0 0% 0%;
+    --card: 222 47% 10%;
     --card-foreground: 210 40% 98%;
-    --primary: 263 70% 50%;
+    --primary: 174 72% 45%;
     --primary-foreground: 210 40% 98%;
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 218 28% 16%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
+    --muted: 218 28% 16%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 24 95% 58%;
     --accent-foreground: 210 40% 98%;
   }
 }
@@ -47,23 +47,31 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Manrope", "Aptos", "Segoe UI", sans-serif;
+    background-image:
+      radial-gradient(circle at top left, rgba(20, 184, 166, 0.08), transparent 28%),
+      radial-gradient(circle at bottom right, rgba(249, 115, 22, 0.08), transparent 24%);
     overflow-x: hidden;
     width: 100%;
     position: relative;
+  }
+
+  .font-serif {
+    font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   }
 }
 
 @layer components {
   .glass {
-    @apply bg-white/10 dark:bg-black/10 backdrop-blur-md border border-white/20 dark:border-white/10;
+    @apply border border-white/40 bg-white/40 backdrop-blur-md dark:border-white/10 dark:bg-black/10;
   }
 
   .glass-card {
-    @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border border-gray-200/50 dark:border-gray-700/50 rounded-2xl shadow-xl;
+    @apply rounded-2xl border border-gray-200/70 bg-white/75 shadow-xl backdrop-blur-lg dark:border-gray-700/50 dark:bg-slate-900/75;
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600;
+    @apply bg-gradient-to-r from-teal-600 via-emerald-500 to-orange-500 bg-clip-text text-transparent;
   }
 
   .section-container {

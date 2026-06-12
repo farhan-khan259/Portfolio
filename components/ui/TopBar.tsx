@@ -27,15 +27,8 @@ export function TopBar() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
                     {/* Left: Profile Info */}
                     <div className="flex items-center gap-3">
-                        <div className="relative w-12 h-12 rounded-full overflow-hidden border border-border">
-                            <img
-                                src="/assets/logo.webp"
-                                alt={PERSONAL_INFO.name}
-                                className="w-full h-full object-cover"
-                                onError={(e) => {
-                                    e.currentTarget.src = "/assets/logo.webp";
-                                }}
-                            />
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary to-accent text-sm font-black text-white shadow-md shadow-primary/20">
+                            {PERSONAL_INFO.initials}
                         </div>
                         <div className="flex flex-col">
                             <h1 className="text-sm font-bold leading-tight">{PERSONAL_INFO.name}</h1>

@@ -11,7 +11,6 @@ import {
     Cpu,
     Monitor,
     GraduationCap,
-    MessageSquare,
     BadgeCheck,
     Send
 } from "lucide-react";
@@ -23,7 +22,6 @@ const NAV_ITEMS = [
     { name: "Projects", href: "#projects", icon: Monitor },
     { name: "Education", href: "#education", icon: GraduationCap },
     { name: "Certifications", href: "#certifications", icon: BadgeCheck },
-    { name: "Testimonials", href: "#testimonials", icon: MessageSquare },
     { name: "Contact", href: "#contact", icon: Send }
 
 ];

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pinecone">
+  <rect width="64" height="64" rx="16" fill="#ffffff"/>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#0b3bff"/>
+  <path d="M24 47V18h10.5c7 0 11.5 4.3 11.5 10.4 0 6.2-4.5 10.6-11.5 10.6H30V47H24zm6-13h4c3.7 0 6-2.1 6-5.5 0-3.3-2.3-5.4-6-5.4h-4V34z" fill="#ffffff"/>
+</svg>

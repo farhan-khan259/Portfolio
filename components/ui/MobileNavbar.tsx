@@ -3,10 +3,9 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "./ThemeToggle";
 import { PERSONAL_INFO } from "@/lib/constants";
-import { Menu, X, Home, User, Cpu, Monitor, MessageSquare, Send, Briefcase, GraduationCap } from "lucide-react";
+import { Menu, X, Home, User, Cpu, Monitor, Send, Briefcase, GraduationCap, BadgeCheck } from "lucide-react";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 
 const MENU_ITEMS = [
     { name: "Home", href: "#hero", icon: Home },
@@ -15,7 +14,7 @@ const MENU_ITEMS = [
     { name: "Skills", href: "#skills", icon: Cpu },
     { name: "Projects", href: "#projects", icon: Monitor },
     { name: "Education", href: "#education", icon: GraduationCap },
-    { name: "Testimonials", href: "#testimonials", icon: MessageSquare },
+    { name: "Certifications", href: "#certifications", icon: BadgeCheck },
     { name: "Contact", href: "#contact", icon: Send },
 ];
 
@@ -59,13 +58,8 @@ export function MobileNavbar() {
             >
                 {/* Left: Logo & Name */}
                 <div className="flex items-center gap-3">
-                    <div className="relative w-10 h-10 flex items-center justify-center rounded-xl bg-secondary/50 border border-border shadow-inner overflow-hidden">
-                        <Image
-                            src="/assets/logo.webp"
-                            alt="Logo"
-                            fill
-                            className="object-cover"
-                        />
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent text-sm font-black text-white shadow-inner">
+                        {PERSONAL_INFO.initials}
                     </div>
                     <div className="flex flex-col">
                         <span className="text-sm font-bold text-foreground uppercase leading-none tracking-tight">

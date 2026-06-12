@@ -3,6 +3,7 @@ export interface Project {
     title: string;
     description: string;
     tech: string[];
+    highlights?: string[];
     liveUrl?: string;
     githubUrl?: string;
     imageUrl?: string;
@@ -15,11 +16,12 @@ export interface Skill {
 }
 
 export interface SkillsData {
-    frontend: Skill[];
+    languages: Skill[];
+    ai: Skill[];
     backend: Skill[];
-    database: Skill[];
-    realtime: Skill[];
-    devops: Skill[];
+    frontend: Skill[];
+    infra: Skill[];
+    automation: Skill[];
 }
 
 export interface Experience {

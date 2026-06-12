@@ -1,212 +1,240 @@
-import { Project, Skill, Experience, Education, Certification, SocialLink, Testimonial } from "@/types";
+import { Certification, Education, Experience, Project, SocialLink } from "@/types";
 
-// Personal Information
 export const PERSONAL_INFO = {
-    name: "Alex Johnson",
-    title: "Full Stack Web Developer",
-    subtitle: "BS Computer Science Student",
-    tagline: "Building fast, scalable web applications with the MERN stack",
-    description: `Full Stack Web Developer fluent in MERN Stack (React, Node, Express, MongoDB).
-Passionate about crafting clean, maintainable code and delivering seamless user experiences. Constantly exploring new technologies and best practices to stay ahead in the ever-evolving web landscape.`,
-    email: "alex.johnson@example.com",
-    resumeUrl: "#",
+    name: "Ahmed Usman",
+    firstName: "Ahmed",
+    lastName: "Usman",
+    initials: "AU",
+    title: "AI/ML Engineer",
+    subtitle: "AI Product Development, LLM Apps & RAG",
+    tagline: "Building AI products that combine LLMs, LangGraph, FastAPI, retrieval, automation, and strong user-facing product execution.",
+    description:
+        "AI/ML Engineer focused on AI product development across production-grade LLM applications, RAG systems, agentic workflows, voice automation, and applied computer vision. I work across backend architecture, model orchestration, integrations, and product-facing frontend delivery to ship AI software that is reliable, scalable, and actually useful to end users.",
+    email: "ahmadusman050@gmail.com",
+    phone: "+92 335 0707006",
+    location: "Pakistan",
+    availability: "Open to AI/ML, LLM, and backend engineering opportunities",
+    resumeUrl: "/Ahmed's_resume.pdf",
+    githubUrl: "https://github.com/ahmedosm0",
+    linkedinUrl: "https://linkedin.com/in/ahmedusman050",
+    stats: [
+        { label: "Focus", value: "AI Products" },
+        { label: "Stack", value: "LangGraph + FastAPI" },
+    ],
+    highlights: [
+        "AI product development",
+        "Production LLM systems",
+        "RAG and agent orchestration",
+        "Voice agents and automation",
+    ],
 };
 
-
-// Experience
 export const EXPERIENCE: Experience[] = [
     {
         id: 1,
-        position: "Full Stack Developer",
-        company: "NovaTech Solutions",
-        location: "New York, USA",
-        duration: "01/2024 – Present",
+        position: "Associate AI Engineer",
+        company: "Tech Emulsion",
+        location: "Pakistan",
+        duration: "Jul 2025 - Present",
         responsibilities: [
-            "Architected and shipped 5+ full-stack web applications serving thousands of daily active users.",
-            "Led front-end development using React and Next.js, achieving a 40% improvement in page load speed.",
-            "Designed RESTful APIs with Node.js and Express, integrated with MongoDB and PostgreSQL databases.",
-            "Collaborated in an Agile team of 8 engineers, participating in daily stand-ups and sprint planning.",
-            "Implemented CI/CD pipelines using GitHub Actions, reducing deployment time by 60%.",
+            "Design and deploy LLM-powered conversational agents, RAG pipelines, and automation workflows for production AI products.",
+            "Build backend services and integrations using Python, Django, FastAPI, n8n, AWS, and third-party APIs.",
+            "Collaborate with product, engineering, and operations teams to deliver scalable AI systems from concept to deployment.",
         ],
     },
     {
         id: 2,
-        position: "Frontend Developer Intern",
-        company: "BrightMind Digital Agency",
-        location: "Remote",
-        duration: "06/2023 – 12/2023",
+        position: "AI/ML Engineer",
+        company: "DevK System",
+        location: "Pakistan",
+        duration: "Aug 2024 - Jun 2025",
         responsibilities: [
-            "Built responsive UI components for client projects using React and Tailwind CSS.",
-            "Contributed to a SaaS dashboard project, improving UI consistency and accessibility.",
-            "Wrote unit tests with Jest and React Testing Library, maintaining 85%+ coverage.",
-            "Worked closely with UI/UX designers to translate Figma mockups into pixel-perfect interfaces.",
+            "Built LLM applications including RAG systems, autonomous agents, and agentic workflow prototypes.",
+            "Designed and deployed machine learning systems with attention to latency, scalability, and maintainability.",
+            "Applied MLOps practices including Dockerized deployment, CI/CD workflows, and model monitoring.",
+        ],
+    },
+    {
+        id: 3,
+        position: "Back-End Developer",
+        company: "Brandora",
+        location: "Pakistan",
+        duration: "Sep 2022 - Jul 2024",
+        responsibilities: [
+            "Developed REST APIs using Node.js, Express.js, and MongoDB for production web backends.",
+            "Integrated backend services with React frontends to support reliable application data flow.",
+            "Implemented authentication, reusable modules, and query optimization across application features.",
         ],
     },
 ];
 
-// Skills
 export const SKILLS = {
-    frontend: [
-        { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-        { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-        // { name: "Vue", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
-        // { name: "Angular", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" },
+    languages: [
+        { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
         { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
         { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-        { name: "Tailwind CSS", icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
-        { name: "Material UI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" },
-        // { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+        { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
     ],
-
+    ai: [
+        { name: "LangGraph", icon: "https://cdn.simpleicons.org/langchain/1C3C3C" },
+        { name: "LangChain", icon: "https://cdn.simpleicons.org/langchain/1C3C3C" },
+        { name: "OpenAI", icon: "/assets/skills/openai.svg" },
+        { name: "Anthropic", icon: "https://cdn.simpleicons.org/anthropic/191919" },
+        { name: "Pinecone", icon: "/assets/skills/pinecone.svg" },
+        { name: "ChromaDB", icon: "https://www.trychroma.com/favicon.ico" },
+        { name: "Whisper", icon: "/assets/skills/whisper.svg" },
+        { name: "pgvector", icon: "/assets/skills/pgvector.svg" },
+    ],
     backend: [
+        { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+        { name: "Django", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" },
         { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
         { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-        // { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
-        { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-        { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+        { name: "REST APIs", icon: "https://cdn.simpleicons.org/openapiinitiative/6BA539" },
+        { name: "WebSockets", icon: "https://cdn.simpleicons.org/socketdotio/010101" },
     ],
-
-    realtime: [
-        { name: "Socket.io", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" },
-        // { name: "WebRTC", icon: "https://www.vectorlogo.zone/logos/webrtc/webrtc-icon.svg" },
+    frontend: [
+        { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+        { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { name: "Expo", icon: "https://cdn.simpleicons.org/expo/000020" },
+        { name: "Tailwind CSS", icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
+        { name: "TanStack Query", icon: "https://cdn.simpleicons.org/reactquery/FF4154" },
+        { name: "Zustand", icon: "https://zustand-demo.pmnd.rs/favicon.ico" },
     ],
-
-    devops: [
-        { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-        { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+    infra: [
+        { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+        { name: "Supabase", icon: "https://cdn.simpleicons.org/supabase/3ECF8E" },
+        { name: "Redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
         { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-        { name: "Vercel", icon: "https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg" },
-        { name: "Netlify", icon: "https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" },
+        { name: "AWS", icon: "/assets/skills/aws.svg" },
+        { name: "Railway", icon: "https://cdn.simpleicons.org/railway/0B0D0E" },
     ],
-
-    ai: [
-        { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-        { name: "n8n", icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/n8n-icon.png" },
-        // { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
-        // { name: "PyTorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
-        // { name: "OpenCV", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
+    automation: [
+        { name: "n8n", icon: "https://cdn.simpleicons.org/n8n/EA4B71" },
+        { name: "Twilio", icon: "/assets/skills/twilio.svg" },
+        { name: "Shopify", icon: "https://cdn.simpleicons.org/shopify/95BF47" },
+        { name: "Stripe", icon: "https://cdn.simpleicons.org/stripe/635BFF" },
+        { name: "Google Sheets", icon: "https://cdn.simpleicons.org/googlesheets/34A853" },
+        { name: "Buffer", icon: "https://cdn.simpleicons.org/buffer/231F20" },
     ],
 };
 
-// Projects
 export const PROJECTS: Project[] = [
     {
         id: 1,
-        title: "SaaS Analytics Dashboard",
-        description: "A full-stack analytics platform with real-time data visualization, user management, and subscription billing. Built for modern SaaS teams to monitor KPIs at a glance.",
-        tech: ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
-        liveUrl: "#",
-        imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2070",
+        title: "AVL Copilot",
+        description: "A production multimodal RAG and technical-support copilot for the audio, video, and lighting industry, built to help field technicians troubleshoot equipment, retrieve manuals, and diagnose issues from text and images.",
+        tech: ["FastAPI", "LangGraph", "Pinecone", "Redis", "Supabase", "Stripe", "OpenAI"],
+        liveUrl: "https://avlcopilot.com",
         status: "completed",
+        highlights: [
+            "Built a strictly sequential LangGraph pipeline with semantic cache, intent detection, RAG, routing, web search, and SSE streaming.",
+            "Implemented dynamic token budgets, per-user quotas, live observability endpoints, and multimodal image diagnostics.",
+        ],
     },
     {
         id: 2,
-        title: "E-Commerce Storefront",
-        description: "A high-performance online store with product filtering, cart management, secure Stripe payments, and an admin dashboard for inventory control.",
-        tech: ["React", "Express.js", "MongoDB", "Stripe API", "Redux"],
-        liveUrl: "#",
-        imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=2070",
+        title: "The Meatery AI Platform",
+        description: "An internal operations and AI voice-agent platform for a US premium-meat e-commerce brand, combining analytics, CRM automation, inventory logic, and self-improving Retell AI call workflows.",
+        tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Retell AI", "n8n", "Shopify"],
+        liveUrl: "https://themeatery.com/?srsltid=AfmBOorEduXoKb1Q8hZzLfSjCoR87_8A-rF8JhmL2RYL4Po4_q9wzaoP",
         status: "completed",
+        highlights: [
+            "Engineered inbound and outbound voice-agent workflows with live cart lookup, discount generation, SMS delivery, and call safety guardrails.",
+            "Built nightly transcript-analysis automations that used Claude to generate rebuttals, battle cards, and prompt-improvement recommendations.",
+        ],
     },
     {
         id: 3,
-        title: "AI Chat Application",
-        description: "A real-time AI-powered chat app with OpenAI integration, conversation history, and a sleek dark-mode UI. Supports multi-turn conversations and markdown rendering.",
-        tech: ["Next.js", "TypeScript", "OpenAI API", "Socket.io", "Tailwind CSS"],
-        liveUrl: "#",
-        imageUrl: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&q=80&w=2070",
-        status: "in-progress",
+        title: "Good Food Project",
+        description: "A full-stack AI content engine for a UK organic food brand with human-in-the-loop review, brand-grounded content generation, image matching, and scheduled publishing.",
+        tech: ["FastAPI", "Supabase", "LangGraph", "Next.js 15", "React 19", "Cloudflare R2"],
+        liveUrl: "https://frontend-production-97c4.up.railway.app/login",
+        status: "completed",
+        highlights: [
+            "Created an async job-based generation pipeline with provider routing, token-cost controls, and RAG over brand knowledge.",
+            "Delivered reviewer workflows, quote-image composition, image editing, and automated publishing through Buffer.",
+        ],
+    },
+    {
+        id: 4,
+        title: "LinkedIn Outreach Automation Platform",
+        description: "A vision-driven automation platform that runs a real-time LinkedIn outreach pipeline from scraping and enrichment through AI note generation and connection sending.",
+        tech: ["FastAPI", "React 19", "Supabase", "Playwright", "Qwen", "DashScope"],
+        status: "completed",
+        highlights: [
+            "Built a three-tier AI decision cascade to handle LinkedIn UI variants using action-bar snapshots, screenshots, and deterministic label scanning.",
+            "Implemented multi-tenant sessions, retries, cancellation, resume flows, and connection analytics.",
+        ],
+    },
+    {
+        id: 5,
+        title: "Lost-N-Find",
+        description: "A mobile AI lost-and-found platform with claim scoring, admin review, realtime notifications, and semantic matching for noisy or incomplete item descriptions.",
+        tech: ["FastAPI", "Supabase", "React Native", "Expo", "WebSockets", "Mistral"],
+        status: "completed",
+        highlights: [
+            "Combined deterministic matching with LLM semantic scoring to improve claim verification quality.",
+            "Added real-time updates, JWT auth, item matching, and graceful AI fallback behavior.",
+        ],
+    },
+    {
+        id: 6,
+        title: "WhatsApp Freight Agent",
+        description: "A multimodal AI freight-procurement workflow that automates RFQ intake, vendor outreach, quote collection, follow-up, and booking confirmation from WhatsApp conversations.",
+        tech: ["n8n", "WhatsApp API", "OpenAI", "Whisper", "Gmail API", "Google Sheets"],
+        status: "completed",
+        highlights: [
+            "Handled text, voice, PDF, and cargo-image inputs in one operational workflow.",
+            "Reduced token cost by replacing redundant LLM calls with keyword routing, code-based extraction, and templates.",
+        ],
+    },
+    {
+        id: 7,
+        title: "Weapon Detection System",
+        description: "A real-time computer vision system for weapon detection using webcam frames, confidence-scored bounding boxes, and immediate alerting.",
+        tech: ["YOLOv8", "OpenCV", "ONNX", "FastAPI"],
+        status: "completed",
+        highlights: [
+            "Trained a custom YOLOv8 detector on labeled weapon classes and exported it to ONNX for lightweight inference.",
+            "Built a FastAPI-based inference flow with real-time visual detection and alerting.",
+        ],
+    },
+    {
+        id: 8,
+        title: "Face Recognition Attendance Logger",
+        description: "A full-stack face-recognition attendance system for onboarding, live check-in, analytics, and admin workflows.",
+        tech: ["FastAPI", "OpenCV", "face_recognition", "DeepFace", "SQLite", "Plotly"],
+        status: "completed",
+        highlights: [
+            "Implemented employee records, expression-assisted capture, attendance export, and reset flows.",
+            "Added admin CRUD, OTP-based password reset, and attendance analytics by employee, date, and department.",
+        ],
     },
 ];
 
-
-
-// Education
 export const EDUCATION: Education[] = [
     {
         id: 1,
-        degree: "BS Computer Science",
-        institution: "State University of Technology",
-        location: "New York, USA",
-        status: "2022 – 2026 (Ongoing)",
-    },
-    {
-        id: 2,
-        degree: "Associate's Degree in Information Technology",
-        institution: "Lakewood Community College",
-        location: "New Jersey, USA",
-        status: "2020 – 2022 (Completed)",
+        degree: "B.S. Electrical Computing & Communication Engineering",
+        institution: "University of Engineering and Technology, Peshawar",
+        location: "Peshawar, Pakistan",
+        status: "Completed",
     },
 ];
 
-// Certifications
 export const CERTIFICATIONS: Certification[] = [
-    {
-        id: 1,
-        name: "Full Stack Web Development",
-        issuer: "Codecademy Pro",
-        date: "06/2023",
-        image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=2070",
-    },
-    {
-        id: 2,
-        name: "AWS Certified Cloud Practitioner",
-        issuer: "Amazon Web Services",
-        date: "11/2023",
-        image: "https://images.unsplash.com/photo-1607743386760-88ac62b89b8a?auto=format&fit=crop&q=80&w=2070",
-    },
-    {
-        id: 3,
-        name: "React Developer Certification",
-        issuer: "Meta via Coursera",
-        date: "03/2024",
-        image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=2070",
-    },
+    { id: 1, name: "Machine Learning Specialization", issuer: "Coursera", date: "Completed" },
+    { id: 2, name: "Deep Learning Specialization", issuer: "Coursera", date: "Completed" },
+    { id: 3, name: "Machine Learning in Production", issuer: "Coursera", date: "Completed" },
+    { id: 4, name: "TensorFlow for AI, ML and DL", issuer: "Coursera", date: "Completed" },
+    { id: 5, name: "Generative AI with LangChain and Hugging Face", issuer: "Udemy", date: "Completed" },
 ];
 
-// Social Links
 export const SOCIAL_LINKS: SocialLink[] = [
-    {
-        name: "GitHub",
-        url: "https://github.com",
-        icon: "github",
-    },
-    {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com",
-        icon: "linkedin",
-    },
-    {
-        name: "Email",
-        url: `mailto:${PERSONAL_INFO.email}`,
-        icon: "Mail",
-    },
+    { name: "GitHub", url: PERSONAL_INFO.githubUrl, icon: "github" },
+    { name: "LinkedIn", url: PERSONAL_INFO.linkedinUrl, icon: "linkedin" },
+    { name: "Email", url: `mailto:${PERSONAL_INFO.email}`, icon: "email" },
 ];
 
-// Footer
-export const FOOTER_TEXT = "Open to Full Stack Developer roles and opportunities";
-
-// Testimonials
-export const TESTIMONIALS: Testimonial[] = [
-    {
-        id: 1,
-        text: "Alex's ability to bridge the gap between design vision and high-performance engineering is truly impressive. He didn't just build our platform — he architected a scalable future for our product.",
-        author: "MORGAN DAVIS",
-        role: "CTO, NEXAFLOW LABS",
-        stars: 5,
-    },
-    {
-        id: 2,
-        text: "Working with Alex was a game-changer for our team. His dedication to clean code, pixel-perfect UI, and smooth UX brought a level of polish we didn't think was achievable on our timeline.",
-        author: "SOPHIA RIVERS",
-        role: "PRODUCT DIRECTOR, ORBIT STUDIOS",
-        stars: 5,
-    },
-    {
-        id: 3,
-        text: "Alex is one of the most reliable and skilled developers I've worked with. His problem-solving skills and attention to detail make him an invaluable asset to any engineering team.",
-        author: "DANIEL FOSTER",
-        role: "FOUNDER, LUMINARY DIGITAL",
-        stars: 5,
-    },
-];
+export const FOOTER_TEXT = "Open to AI product, LLM engineering, and backend-focused collaboration.";

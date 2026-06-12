@@ -1,57 +1,50 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { SKILLS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 const tabs = [
+    { key: "languages", label: "Languages" },
+    { key: "ai", label: "LLM & AI" },
+    { key: "backend", label: "Backend" },
     { key: "frontend", label: "Frontend" },
-    { key: "backend", label: "Backend & Database" },
-    { key: "realtime", label: "Real-time" },
-    { key: "devops", label: "DevOps" },
-    { key: "ai", label: "AI/ML" },
+    { key: "infra", label: "Data & Infra" },
+    { key: "automation", label: "Automation" },
 ];
 
 export function Skills() {
-    const [activeTab, setActiveTab] = useState("frontend");
+    const [activeTab, setActiveTab] = useState("ai");
 
     return (
         <section id="skills" className="py-24">
-            {/* Heading */}
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="text-center mb-20"
+                className="mb-20 text-center"
             >
-                <p className="mb-6 text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.5em] text-zinc-500">
-                    MY SKILLSET
+                <p className="mb-6 text-[11px] font-bold uppercase tracking-[0.5em] text-primary">
+                    Core Stack
                 </p>
-                <div className="flex flex-col items-center overflow-visible">
-                    <h2 className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 leading-[0.9] select-none text-[2.5rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem]">
-                        <span className="font-sans font-bold tracking-tight text-zinc-900 dark:text-white">
-                            The Magic
-                        </span>
-                        <span className="font-serif italic font-light tracking-tight bg-gradient-to-r from-pink-500 to-orange-500 bg-clip-text text-transparent drop-shadow-sm">
-                            Behind
-                        </span>
-                    </h2>
-                </div>
+                <h2 className="text-[2.8rem] font-bold leading-[0.95] tracking-tight text-zinc-900 dark:text-white sm:text-[4.2rem] md:text-[5.4rem]">
+                    Tools behind the
+                    <span className="ml-3 font-serif font-light italic text-primary">systems I ship</span>
+                </h2>
             </motion.div>
 
-            {/* Tabs */}
-            <div className="flex justify-center flex-wrap gap-3 md:gap-4 mb-20 px-4">
+            <div className="mb-14 flex flex-wrap justify-center gap-3 px-4">
                 {tabs.map((tab) => (
                     <button
                         key={tab.key}
                         onClick={() => setActiveTab(tab.key)}
                         className={cn(
-                            "px-6 py-2.5 md:px-8 md:py-3 rounded-full text-sm font-medium transition-all duration-300",
+                            "rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-300",
                             activeTab === tab.key
-                                ? "bg-zinc-900 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-900 shadow-xl scale-105"
-                                : "bg-zinc-100/50 dark:bg-zinc-800/40 text-zinc-500 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-700/50"
+                                ? "bg-zinc-950 text-white shadow-lg dark:bg-white dark:text-zinc-950"
+                                : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
                         )}
                     >
                         {tab.label}
@@ -59,42 +52,40 @@ export function Skills() {
                 ))}
             </div>
 
-            {/* Skills Container */}
-            <div className="max-w-6xl mx-auto px-4">
+            <div className="mx-auto max-w-6xl px-4">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={activeTab}
-                        initial={{ opacity: 0, y: 15 }}
+                        initial={{ opacity: 0, y: 12 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -15 }}
-                        transition={{ duration: 0.3 }}
-                        className="flex flex-wrap justify-center gap-x-4 gap-y-6 md:gap-x-8 md:gap-y-10 max-w-3xl mx-auto"
+                        exit={{ opacity: 0, y: -12 }}
+                        transition={{ duration: 0.25 }}
+                        className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6"
                     >
                         {SKILLS[activeTab as keyof typeof SKILLS]?.map((skill) => {
-                            const isInvertedInDark = ["Next.js", "Express.js", "Socket.io", "GitHub", "Vercel", "n8n"].includes(skill.name);
+                            const isInvertedInDark = [
+                                "Next.js",
+                                "Express.js",
+                                "Railway",
+                                "OpenAI",
+                                "Anthropic",
+                                "Expo",
+                                "n8n",
+                                "WebSockets",
+                            ].includes(skill.name);
+
                             return (
-                                <motion.div
+                                <div
                                     key={skill.name}
-                                    className="group flex flex-col items-center justify-center gap-3 transition-all duration-300 w-24 md:w-32"
+                                    className="glass-card flex min-h-36 flex-col items-center justify-center rounded-[1.75rem] p-5 text-center transition-transform duration-300 hover:-translate-y-1"
                                 >
-                                    <motion.div
-                                        whileHover={{ scale: 1.05, y: -2 }}
-                                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                                        className="relative w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-transparent"
-                                    >
-                                        <img
-                                            src={skill.icon}
-                                            alt={skill.name}
-                                            className={cn(
-                                                "w-full h-full object-contain mx-auto transition-transform duration-300",
-                                                isInvertedInDark && "dark:invert"
-                                            )}
-                                        />
-                                    </motion.div>
-                                    <p className="font-medium text-[9px] md:text-xs text-muted-foreground group-hover:text-foreground transition-all duration-300 text-center">
-                                        {skill.name}
-                                    </p>
-                                </motion.div>
+                                    <img
+                                        src={skill.icon}
+                                        alt={skill.name}
+                                        className={cn("mb-4 h-12 w-12 object-contain", isInvertedInDark && "dark:invert")}
+                                    />
+                                    <p className="text-sm font-medium text-foreground/85">{skill.name}</p>
+                                </div>
                             );
                         })}
                     </motion.div>
