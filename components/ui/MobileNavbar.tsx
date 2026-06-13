@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { ThemeToggle } from "./ThemeToggle";
 import { PERSONAL_INFO } from "@/lib/constants";
 import { Menu, X, Home, User, Cpu, Monitor, Send, Briefcase, GraduationCap, BadgeCheck } from "lucide-react";
@@ -58,8 +59,14 @@ export function MobileNavbar() {
             >
                 {/* Left: Logo & Name */}
                 <div className="flex min-w-0 items-center gap-2.5">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent text-sm font-black text-white shadow-inner">
-                        {PERSONAL_INFO.initials}
+                    <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full border border-border/60 bg-secondary/40 shadow-inner">
+                        <Image
+                            src="/assets/myprofilepic.png"
+                            alt={PERSONAL_INFO.name}
+                            fill
+                            className="object-cover object-top"
+                            priority
+                        />
                     </div>
                     <div className="min-w-0 flex flex-col">
                         <span className="truncate text-[0.95rem] font-bold text-foreground uppercase leading-none tracking-tight">

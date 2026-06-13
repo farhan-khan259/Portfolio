@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { PERSONAL_INFO, SOCIAL_LINKS } from "@/lib/constants";
 import { MobileNavbar } from "./MobileNavbar";
@@ -27,8 +28,14 @@ export function TopBar() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
                     {/* Left: Profile Info */}
                     <div className="flex items-center gap-3">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary to-accent text-sm font-black text-white shadow-md shadow-primary/20">
-                            {PERSONAL_INFO.initials}
+                        <div className="relative h-12 w-12 overflow-hidden rounded-full border border-border/60 bg-secondary/40 shadow-md shadow-primary/15">
+                            <Image
+                                src="/assets/myprofilepic.png"
+                                alt={PERSONAL_INFO.name}
+                                fill
+                                className="object-cover object-top"
+                                priority
+                            />
                         </div>
                         <div className="flex flex-col">
                             <h1 className="text-sm font-bold leading-tight">{PERSONAL_INFO.name}</h1>
