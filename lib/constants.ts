@@ -207,11 +207,11 @@ export const EDUCATION: Education[] = [
 ];
 
 export const CERTIFICATIONS: Certification[] = [
-    { id: 1, name: "Machine Learning Specialization", issuer: "Coursera", date: "Completed" },
-    { id: 2, name: "Deep Learning Specialization", issuer: "Coursera", date: "Completed" },
-    { id: 3, name: "Machine Learning in Production", issuer: "Coursera", date: "Completed" },
-    { id: 4, name: "TensorFlow for AI, ML and DL", issuer: "Coursera", date: "Completed" },
-    { id: 5, name: "Generative AI with LangChain and Hugging Face", issuer: "Udemy", date: "Completed" },
+    { id: 1, name: "Meta Full Stack Developer Professional Certificate", issuer: "Meta", date: "Completed" },
+    { id: 2, name: "JavaScript Algorithms and Data Structures", issuer: "freeCodeCamp", date: "Completed" },
+    { id: 3, name: "React Development", issuer: "Meta", date: "Completed" },
+    { id: 4, name: "Node.js & Express.js Development", issuer: "Udemy", date: "Completed" },
+    { id: 5, name: "MongoDB Developer Certification", issuer: "MongoDB", date: "Completed" },
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
