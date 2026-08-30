@@ -6,16 +6,14 @@ import { SKILLS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 const tabs = [
-    { key: "languages", label: "Languages" },
-    { key: "ai", label: "LLM & AI" },
-    { key: "backend", label: "Backend" },
-    { key: "frontend", label: "Frontend" },
-    { key: "infra", label: "Data & Infra" },
-    { key: "automation", label: "Automation" },
+    { key: "languages", label: "Frontend" },
+    { key: "ai", label: "Backend" },
+    { key: "backend", label: "Databases & Cloud" },
+    { key: "frontend", label: "DevOps & Tools" },
 ];
 
 export function Skills() {
-    const [activeTab, setActiveTab] = useState("ai");
+    const [activeTab, setActiveTab] = useState("languages");
 
     return (
         <section id="skills" className="py-24">

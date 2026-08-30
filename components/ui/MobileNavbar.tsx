@@ -61,7 +61,7 @@ export function MobileNavbar() {
                 <div className="flex min-w-0 items-center gap-2.5">
                     <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full border border-border/60 bg-secondary/40 shadow-inner">
                         <Image
-                            src="/assets/myprofilepic.png"
+                            src="/assets/muhammad-farhan-profile.png"
                             alt={PERSONAL_INFO.name}
                             fill
                             className="object-cover object-top"

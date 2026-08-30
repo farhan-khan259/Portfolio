@@ -7,18 +7,18 @@ import { PERSONAL_INFO } from "@/lib/constants";
 
 const valueCards = [
     {
-        title: "AI Product Engineering",
-        description: "From model workflows to frontend delivery, I build AI products that solve real user problems instead of stopping at prototypes.",
+        title: "Full-Stack Development",
+        description: "I build complete web applications, connecting polished frontend experiences with reliable backend systems.",
         icon: BrainCircuit,
     },
     {
-        title: "Workflow Automation",
-        description: "I connect models with business systems, APIs, schedulers, and human review loops so automation becomes reliable and operationally useful.",
+        title: "API & Database Integration",
+        description: "I design and integrate RESTful APIs, backend services, authentication workflows, and database-driven features.",
         icon: Sparkles,
     },
     {
-        title: "RAG & Agent Systems",
-        description: "I design retrieval, routing, caching, and orchestration layers that make AI apps more grounded, observable, and scalable.",
+        title: "Deployment & Performance",
+        description: "I deploy and maintain applications on AWS and VPS environments with a focus on speed and reliability.",
         icon: Boxes,
     },
 ];
@@ -37,7 +37,7 @@ export function About() {
                     About Me
                 </p>
                 <h2 className="text-5xl font-bold tracking-tighter text-neutral-900 dark:text-white sm:text-6xl md:text-7xl">
-                    Shipping AI
+                    Building web experiences
                     <span className="ml-3 font-serif font-light italic text-primary">that people can use</span>
                 </h2>
             </motion.div>
@@ -52,7 +52,7 @@ export function About() {
                 >
                     <div className="relative mb-6 aspect-square w-32 overflow-hidden rounded-full border border-border/60 shadow-md">
                         <Image
-                            src="/assets/myprofilepic.png"
+                            src="/assets/muhammad-farhan-profile.png"
                             alt={PERSONAL_INFO.name}
                             fill
                             className="object-cover object-top"

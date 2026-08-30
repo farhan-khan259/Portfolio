@@ -3,22 +3,22 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 
 export const metadata: Metadata = {
-    title: "Ahmed Usman | AI/ML Engineer",
-    description: "Portfolio of Ahmed Usman, an AI/ML Engineer building production LLM applications, RAG systems, voice agents, and applied AI products.",
-    keywords: ["Ahmed Usman", "AI Engineer", "LLM Engineer", "RAG", "LangGraph", "FastAPI", "Next.js"],
-    authors: [{ name: "Ahmed Usman" }],
-    creator: "Ahmed Usman",
+    title: "Muhammad Farhan | Full Stack Web Developer",
+    description: "Portfolio of Muhammad Farhan, a Full Stack Web Developer and Software Engineer building responsive, scalable web applications.",
+    keywords: ["Muhammad Farhan", "Full Stack Web Developer", "Software Engineer", "React", "Next.js", "Node.js", "Express.js"],
+    authors: [{ name: "Muhammad Farhan" }],
+    creator: "Muhammad Farhan",
     openGraph: {
         type: "website",
         locale: "en_US",
-        title: "Ahmed Usman | AI/ML Engineer",
-        description: "Production AI systems, LLM workflows, RAG, automation, and voice agents.",
-        siteName: "Ahmed Usman Portfolio",
+        title: "Muhammad Farhan | Full Stack Web Developer",
+        description: "Responsive, scalable web applications with React, Next.js, Node.js, Express.js, and modern databases.",
+        siteName: "Muhammad Farhan Portfolio",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Ahmed Usman | AI/ML Engineer",
-        description: "Production AI systems, LLM workflows, RAG, automation, and voice agents.",
+        title: "Muhammad Farhan | Full Stack Web Developer",
+        description: "Responsive, scalable web applications with React, Next.js, Node.js, Express.js, and modern databases.",
     },
 };
 

@@ -7,13 +7,12 @@ import { Button } from "@/components/ui/Button";
 import { PERSONAL_INFO } from "@/lib/constants";
 
 const featuredLogos = [
-    { name: "LangGraph", icon: "/assets/skills/langgraph.svg" },
-    { name: "Claude", icon: "/assets/skills/claude.svg" },
-    { name: "FastAPI", icon: "/assets/skills/fastapi.svg" },
-    { name: "OpenAI", icon: "/assets/skills/openai.svg" },
-    { name: "Pinecone", icon: "/assets/skills/pinecone.svg" },
-    { name: "Whisper", icon: "/assets/skills/whisper.svg" },
-    { name: "Twilio", icon: "/assets/skills/twilio.svg" },
+    { name: "React.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+    { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+    { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+    { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+    { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
     { name: "AWS", icon: "/assets/skills/aws.svg" },
 ];
 
@@ -52,7 +51,7 @@ export function Hero() {
                             variants={item}
                             className="mb-6 text-[11px] font-bold uppercase tracking-[0.5em] text-primary"
                         >
-                            AI Systems Engineer
+                            Full Stack Web Developer
                         </motion.p>
 
                         <motion.div variants={item} className="mb-6 space-y-2">
@@ -142,7 +141,7 @@ export function Hero() {
                                     <div className="absolute inset-3 rounded-full border border-border/60" />
                                     <div className="relative h-full w-full overflow-hidden rounded-full border-[10px] border-background/90 bg-secondary/50 shadow-xl">
                                         <Image
-                                            src="/assets/myprofilepic.png"
+                                            src="/assets/muhammad-farhan-profile.png"
                                             alt={PERSONAL_INFO.name}
                                             fill
                                             className="object-cover object-top"
@@ -156,7 +155,7 @@ export function Hero() {
                                 Focus
                             </p>
                             <p className="mt-3 text-lg leading-8 text-foreground/90">
-                                AI product development across LLM workflows, retrieval systems, agent orchestration, backend APIs, and user-facing product delivery.
+                                Full-stack web development across responsive interfaces, backend APIs, databases, authentication, and cloud deployment.
                             </p>
 
                             <div className="mt-8 grid gap-3">

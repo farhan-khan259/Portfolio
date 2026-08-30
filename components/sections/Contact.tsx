@@ -42,7 +42,7 @@ export function Contact() {
                         Availability
                     </p>
                     <p className="mt-4 max-w-xl text-lg leading-8 text-foreground/90">
-                        {PERSONAL_INFO.availability}. If you&apos;re hiring for AI engineering, LLM products, RAG systems, voice automation, or backend-heavy product work, I&apos;d be happy to talk.
+                        {PERSONAL_INFO.availability}. If you&apos;re hiring for frontend, backend, or full-stack web development work, I&apos;d be happy to talk.
                     </p>
 
                     <div className="mt-8 flex flex-wrap gap-4">

@@ -30,7 +30,7 @@ export function TopBar() {
                     <div className="flex items-center gap-3">
                         <div className="relative h-12 w-12 overflow-hidden rounded-full border border-border/60 bg-secondary/40 shadow-md shadow-primary/15">
                             <Image
-                                src="/assets/myprofilepic.png"
+                                src="/assets/muhammad-farhan-profile.png"
                                 alt={PERSONAL_INFO.name}
                                 fill
                                 className="object-cover object-top"
