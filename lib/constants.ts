@@ -15,8 +15,8 @@ export const PERSONAL_INFO = {
     location: "Kohat, Pakistan",
     availability: "Open to full-stack web development opportunities",
     resumeUrl: "/Muhammad_Farhan_Full_Stack_Web_Developer_CV.pdf",
-    githubUrl: "https://github.com/ahmedosm0",
-    linkedinUrl: "https://linkedin.com/in/ahmedusman050",
+    githubUrl: "https://github.com/farhan-khan259",
+    linkedinUrl: "https://www.upwork.com/freelancers/~0161cb4ad10d46de94",
     stats: [
         { label: "Focus", value: "Full-Stack Development" },
         { label: "Stack", value: "React + Node.js" },
@@ -235,7 +235,7 @@ export const CERTIFICATIONS: Certification[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
     { name: "GitHub", url: PERSONAL_INFO.githubUrl, icon: "github" },
-    { name: "LinkedIn", url: PERSONAL_INFO.linkedinUrl, icon: "linkedin" },
+    { name: "Upwork", url: PERSONAL_INFO.linkedinUrl, icon: "upwork" },
     { name: "Email", url: `mailto:${PERSONAL_INFO.email}`, icon: "email" },
 ];
 

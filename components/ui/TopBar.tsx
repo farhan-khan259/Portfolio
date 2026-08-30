@@ -2,13 +2,14 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 import { PERSONAL_INFO, SOCIAL_LINKS } from "@/lib/constants";
+import { UpworkIcon } from "./UpworkIcon";
 import { MobileNavbar } from "./MobileNavbar";
 
 const iconMap = {
     github: Github,
-    linkedin: Linkedin,
+    upwork: UpworkIcon,
     email: Mail,
 };
 
@@ -58,7 +59,11 @@ export function TopBar() {
                                     className="text-muted-foreground hover:text-primary transition-colors"
                                     aria-label={link.name}
                                 >
-                                    <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
+                                    {link.icon === "upwork" ? (
+                                        <Icon className="w-4 h-4 sm:w-5 sm:h-5 rounded-md" />
+                                    ) : (
+                                        <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
+                                    )}
                                 </a>
                             );
                         })}

@@ -2,8 +2,9 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowDownRight, Download, Github, Linkedin, MapPin } from "lucide-react";
+import { ArrowDownRight, Download, Github, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { UpworkIcon } from "@/components/ui/UpworkIcon";
 import { PERSONAL_INFO } from "@/lib/constants";
 
 const featuredLogos = [
@@ -185,9 +186,9 @@ export function Hero() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-background/80 text-muted-foreground transition-colors hover:text-foreground"
-                                    aria-label="LinkedIn"
+                                    aria-label="Upwork"
                                 >
-                                    <Linkedin className="h-5 w-5" />
+                                    <UpworkIcon className="h-5 w-5 rounded-md" />
                                 </a>
                             </div>
                         </div>

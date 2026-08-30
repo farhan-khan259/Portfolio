@@ -1,14 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Phone, Send } from "lucide-react";
+import { Github, Mail, Phone, Send } from "lucide-react";
 import { PERSONAL_INFO } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
+import { UpworkIcon } from "@/components/ui/UpworkIcon";
 
 const contactLinks = [
     { icon: Mail, label: PERSONAL_INFO.email, href: `mailto:${PERSONAL_INFO.email}` },
     { icon: Phone, label: PERSONAL_INFO.phone, href: `tel:${PERSONAL_INFO.phone.replace(/\s+/g, "")}` },
-    { icon: Linkedin, label: "LinkedIn", href: PERSONAL_INFO.linkedinUrl },
+    { icon: UpworkIcon, label: "Upwork", href: PERSONAL_INFO.linkedinUrl },
     { icon: Github, label: "GitHub", href: PERSONAL_INFO.githubUrl },
 ];
 
